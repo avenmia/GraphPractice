@@ -20,3 +20,21 @@ void Vertex::addEdge(Vertex& v){
         this->edges.push_back(v);
     }
 }
+
+//Get vertex value
+int Vertex::getValue() const{
+    return this->val;
+}
+
+//Return vectors neighbors
+std::vector<Vertex> Vertex::getEdges(){
+    return this->edges;
+}
+
+//Custom comparator to determine if vertices are equal
+bool Vertex::operator ==(const Vertex & v1) const{
+    if(v1.getValue() == this->val){
+        return true;
+    }
+    return false;
+}

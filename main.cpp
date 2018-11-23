@@ -38,6 +38,9 @@ int main(int argc, char* argv[]){
     v.push_back(v5);
 
     Graph g(6, v);
+    if(g.BFS(2)){
+        std::cout << "Found 2!" << std::endl;
+    }
 
     return 0;
 }
