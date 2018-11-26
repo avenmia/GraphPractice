@@ -6,3 +6,6 @@ graph.o: graph.cpp graph.h vertex.o
 
 vertex.o: vertex.cpp vertex.h
 	g++ -c -std=c++11 vertex.cpp -o vertex.o
+
+clean:
+	rm *.o graph
